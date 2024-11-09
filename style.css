@@ -1,0 +1,821 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: nasa;
+    src: url(nasalization-rg.otf);
+}
+
+@font-face {
+    font-family: mono;
+    src: url(Fontspring-DEMO-freigeist-regular.otf);
+}
+body{
+
+    background-color: rgb(252, 252, 222) !important;
+}
+h1 {
+    font-family: mono;
+}
+h3 {
+    font-family: mono;
+}
+
+.mainheight {
+
+    min-height: 100vh !important;
+}
+
+/* .b1 {
+
+    border: 2px solid red;
+}
+
+.b2 {
+
+    border: 5px solid green;
+} */
+
+.nav-butun{
+
+    border: 1px solid #21bd4a !important;
+    background-color: transparent;
+    border-radius: 10px;
+    color: gray !important;
+    transition: .3s all linear;
+}
+.nav-butun:hover{
+
+    /* border: 1px solid #21bd4a !important; */
+    background-color: #21bd4a;
+    border-radius: 10px;
+    color: white !important;
+    transition: .3s all linear;
+}
+
+.nav-link {
+
+    color: gray !important;
+    transition: .3s all linear;
+}
+
+.nav-link:hover {
+
+    color: white !important;
+    transition: .3s all linear;
+}
+
+.first-butn {
+
+    border: 1.5px solid #21bd4a !important;
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: .3s all linear;
+}
+
+.apply {
+    /* border: 2px solid red; */
+    width: 155px !important;
+    height: 55px !important;
+    background-color: #21bd4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    font-family: mono;
+    font-weight: bold;
+    transition: .3s all linear;
+
+}
+
+.icon {
+    width: 45px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all linear;
+}
+
+.first-butn:hover {
+
+    background-color: #21bd4a;
+    transition: .3s all linear;
+}
+
+.first-butn:hover .icon {
+
+    transform: translateX(5px);
+    transition: .3s all linear;
+    color: white;
+}
+
+.first-butn:hover .apply {
+
+    color: #21bd4a !important;
+    background-color: white;
+    transition: .3s all linear;
+}
+
+.sec-btn {
+
+    border-radius: 50px;
+    background-color: #21bd4a;
+    border: none;
+    transition: .3s all linear;
+}
+
+.sec-btn:hover {
+
+    border-radius: 50px;
+    background-color: black;
+    border: none;
+    transition: .3s all linear;
+}
+
+.sec-btn:hover i {
+    color: white;
+    transition: .3s all linear;
+}
+
+.equip {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    transition: .3s all linear;
+
+}
+.equip:hover {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #21bd4a !important;
+    color: white;
+    transition: .3s all linear;
+}
+
+.merch {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    transition: .3s all linear;
+}
+
+.merch:hover {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #21bd4a !important;
+    color: white;
+    transition: .3s all linear;
+}
+.merch {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.082);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    transition: .3s all linear;
+}
+
+.busi {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.082);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    transition: .3s all linear;
+}
+.busi:hover {
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.082);
+    font-family: mono;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #21bd4a !important;
+    color: white;
+    transition: .3s all linear; 
+}
+.card-1{
+    border: none !important;
+    transition: .3s all linear;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+}
+.card-1:hover{
+    border: none !important;
+    background-color: rgb(74, 74, 74);
+    color: white !important;
+    transition: .3s all linear;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.217);
+}
+.card-1:hover h1{
+    border: none !important;
+    color: white !important;
+    transition: .3s all linear; 
+}
+.card-1:hover h3{
+    border: none !important;
+    color: white !important;
+    transition: .3s all linear;
+}
+.card-2{
+    background: url(sasa.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: .3s all linear;
+    /* animation: loop 3s infinite ease-in-out; */
+}
+.card-2:hover{
+    background: url(sasa.jpg);
+    background-size: 110%;
+    background-position: center;
+    transition: .3s all linear;
+    /* animation: loop 3s infinite ease-in-out; */
+}
+@keyframes loop {
+    0%{
+        transform: translateY(12px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(12px);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    
+    .first-top h1{
+
+        font-size: 40px !important;
+        width: 100% !important;
+        padding: 0px !important;
+    }
+
+    .head-eight{
+        width: 100%;
+        font-size: 35px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .center-image-eight{
+
+        min-height: 310px !important;
+    }
+
+    .head-12{
+        font-size: 30px !important;
+        width: 100% !important;
+    }
+    .text-twelfth{
+
+        height: 100px;
+    }
+
+    .businxes{
+        width: 80%;
+    }
+    .fastx{
+        width: 80%;
+    }
+    
+    .head-fourthteen{
+
+
+        font-size: 40px !important;
+    }
+
+}
+.card-fourth-1{
+    border-radius: 30px;
+    background-color: white;
+    transition: .3s all linear;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.201);
+}
+.card-fourth-1:hover h1{
+    transition: .3s all linear;
+    color: white !important;
+}
+.card-fourth-1:hover p{
+    transition: .3s all linear;
+    color: white !important;
+}
+.card-fourth-1:hover{
+    border-radius: 30px;
+    background-color: rgb(74, 74, 74);
+    transition: .3s all linear;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.201);
+}
+.right-card-fourth2{
+
+    background: url(finger.jpg);
+    background-size: 130%;
+    transition: .3s all linear;
+    background-position: center;
+}
+.right-card-fourth2:hover{
+
+    background: url(finger.jpg);
+    background-size: 150%;
+    transition: .3s all linear;
+    background-position: center;
+}
+.left-card-fourth2{
+
+    background-color: white;
+    transition: .3s all linear;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.151);
+}
+.left-card-fourth2:hover{
+
+    background-color: rgb(74, 74, 74);
+    transition: .3s all linear;
+    color: white !important;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.151);
+}
+.left-card-fourth2:hover h1{
+
+    transition: .3s all linear;
+    color: white !important;
+}
+.img-right-fourth-bottom{
+
+    height: 250px !important;
+    border-radius: 20px;
+    background: url(images\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .3s all linear;
+}
+
+.bottom-card-right{
+
+    transition: .3s all linear;
+    background-color: white;
+}
+.top-card-right{
+    background-color: white;
+    transition: .3s all linear;
+}
+.top-card-right:hover{
+    background-color: rgb(74, 74, 74);
+    color: white !important;
+    transition: .3s all linear;
+}
+.bottom-card-right:hover{
+
+
+    background-color: rgb(74, 74, 74);
+    color: white !important;
+    transition: .3s all linear;
+}
+.star-1{
+    
+    background-color: #21bd4a;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all linear;
+}
+.star-1:hover{
+    
+    background-color: transparent;
+    color: yellow !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all linear;
+}
+.card-1-sixth-img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: url(man\ in\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-2-sixth-img{
+
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background: url(young-man-wearing-grey-polo-shirt-with-wide-open-eyes-happy-positive-green.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-1-six{
+
+
+    background-color: white;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.112);
+    transition: .3s all linear;
+}
+.card-1-six:hover{
+
+    color: white !important;
+    background-color: rgb(74, 74, 74);
+    transition: .3s all linear;
+}
+.card-1-six:hover p{
+
+    color: white !important;
+    transition: .3s all linear;
+}
+.card-1-six:hover h4{
+
+    color: white !important;
+    transition: .3s all linear;
+}
+.card-2-six{
+
+
+    background-color: white;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.112);
+    transition: .3s all linear;
+}
+.card-2-six:hover{
+
+    color: white !important;
+    background-color: rgb(74, 74, 74);
+    transition: .3s all linear;
+}
+.card-2-six:hover p{
+
+    color: white !important;
+    transition: .3s all linear;
+}
+.card-2-six:hover h4{
+
+    color: white !important;
+    transition: .3s all linear;
+}
+.rec{
+
+    color: #21bd4a;
+    transition: .3s all linear;
+}
+.rec:hover{
+
+    color:white !important;
+    transition: .3s all linear;
+}
+.center-image-eight{
+
+    min-height: 450px;
+    border-radius: 40px;
+    background: url(Screenshot\ 2024-09-18\ 041053.png);
+    background-size: 118%;
+    background-position: 80%;
+    transition: .3s all linear;
+}
+.center-image-eight:hover{
+
+    min-height: 450px;
+    border-radius: 40px;
+    background: url(Screenshot\ 2024-09-18\ 041053.png);
+    background-size: 130%;
+    background-position: 80%;
+    transition: .3s all linear;
+}
+.view-right-8{
+
+    border: 2px solid #21bd4a;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-family: mono;
+    font-weight: bold;
+    font-style: 20px;
+    transition: .3s all linear;
+}
+.view-right-8:hover{
+
+    border: 2px solid white;
+    background-color: #21bd4a;
+    color: white;
+    border-radius: 10px;
+    font-family: mono;
+    font-weight: bold;
+    font-style: 20px;
+    transition: .3s all  linear;
+}
+.right-eight-img-1{
+    min-height: 230px;
+    background: url(images\ \(4\)\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    filter: blur(1px);
+}
+.right-eight-img-2{
+    min-height: 230px;
+    background: url(maids.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    filter: blur(1px);
+    
+}
+.right-eight-card-1{
+
+    background-color: white;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.114);
+    border-radius: 30px;
+}
+.right-eight-card-2{
+
+    background-color: white;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.114);
+    border-radius: 30px;
+}
+.card-1-ninth-rigth{
+
+    border: none;
+    border-radius: 20px;
+}
+.card-1-ninth-rigth{
+
+    background-color: white !important;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.062);
+    transition: .3s all linear;
+}
+.card-1-ninth-rigth:hover{
+
+    background-color: #21bd4a !important;
+    color: white !important;
+    transition: .3s all linear;
+}
+.card-1-ninth-rigth:hover i{
+    
+    color: #21bd4a !important;
+    transition: .3s all linear;
+    
+}
+.card-1-ninth-rigth:hover span{
+
+    border: 1px solid white !important;
+    background-color: white;
+    transition: .3s all linear;
+}
+.card-1-tenth{
+
+    transition: .3s all linear;
+}
+.card-1-tenth:hover{
+
+    background-color: #21bd4a !important;
+    transition: .3s all linear;
+    color: white;
+}
+.cc{
+
+    background-color: transparent !important;
+    transition: .3s all linear;
+    border: 1px solid #21bd4a !important;
+    rotate: -45deg !important;
+}
+.cc:hover{
+
+    background-color: #21bd4a !important;
+    transition: .3s all linear;
+    border: 1px solid #21bd4a !important;
+}
+.cc2{
+
+    background-color: white !important;
+    transition: .3s all linear;
+}
+.cc2:hover{
+
+    background-color: rgb(74, 74, 74) !important;
+    transition: .3s all linear;
+    color: white !important;
+}
+.cc2:hover p{
+
+    transition: .3s all linear;
+    color: white !important;
+}
+.cc2:hover .cc{
+
+    transition: .3s all linear;
+    color: white !important;
+    border: 1px solid white !important;
+}
+.cc2:hover .cc:hover{
+
+    transition: .3s all linear;
+    color: white !important;
+    border: 1px solid #21bd4a !important;
+}
+.view-right-9{
+
+    border: 1px solid #21bd4a !important;
+    transition: .3s all linear;
+    background-color: white;
+    color: black;
+    font-family: mono;
+    font-weight: bold;
+}
+.view-right-9:hover{
+
+    transition: .3s all linear;
+    color: white !important;
+    background-color: #21bd4a;
+}
+.butunboy{
+
+    background-color: transparent;
+    color: gray;
+    border:1px solid gray;
+    transition: .3s all linear;
+}
+.butunboy:hover{
+
+    background-color: transparent;
+    color: #21bd4a;
+    border: 1px solid #21bd4a;
+    transition: .3s all linear;
+}
+.img-bg-12{
+
+    background-size: 125% !important;
+    transition: .3s all linear;
+    background-position: center !important;
+}
+.img-bg-12:hover{
+
+    background-size: 115% !important;
+    transition: .3s all linear;
+    background-position: center;
+}
+.img-left-right-twelfth{
+
+
+    background: url(images\ \(6\).jpg);
+    background-size: 120%;
+    background-position: right;
+    transition: .3s all linear;
+}
+.img-left-right-twelfth:hover{
+
+
+    background: url(images\ \(6\).jpg);
+    background-size: 130%;
+    transition: .3s all linear;
+    background-position: right;
+}
+.img-left-right-twelfth2{
+    
+    background: url(lady-swiping-card-abounaja.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: .3s all linear;
+}
+.img-left-right-twelfth2:hover{
+
+    background: url(lady-swiping-card-abounaja.jpg);
+    background-size: 110%;
+    transition: .3s all linear;
+    background-position: center;
+}
+.aply{
+
+    background-color: #21bd4a;
+    transition: .3s all linear;
+    border: none;
+    border-radius: 15px;
+    font-family: mono;
+    font-weight: bold;
+}
+.aply:hover{
+
+    background-color: #2cd85a;
+    transition: .3s all linear;
+}
+.card-1-thirteen{
+
+    background-color: white;
+    border: none !important;
+    border-radius: 30px;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.187);
+}
+.top-1-number{
+
+    border-radius: 20px;
+    background-color: rgb(203,203,203) !important;
+    color: #21bd4a !important;
+    transition: .3s all linear;
+}
+.top-1-number:hover{
+
+    border-radius: 20px;
+    background-color: #21bd4a !important;
+    color: white !important;
+    transition: .3s all linear;
+}
+.checks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .3s all linear;
+}
+.checks:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #21bd4a;
+    transition: .3s all linear;
+    color: white;
+}
+
+.butunsixthteen{
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #21bd4a !important; 
+    font-size: 20px;
+    font-family: mono;
+    font-weight: bold;
+    transition: .3s all linear;
+}
+.butunsixthteen:hover{
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white !important; 
+    font-size: 20px;
+    font-family: mono;
+    font-weight: bold;
+    transition: .3s all linear;
+    transform: translateY(-10px)
+}
+.image-right-sixthteen{
+
+    background: url(images\ \(7\).jpg);
+    background-size: cover;
+    border-radius: 30px;
+}
+.what{
+   
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    min-height: 150px;
+    transition: .3s all linear;
+}
+.what:hover{
+   
+    border:none;
+    border-radius: 30px;
+    color: #21bd4a;
+    font-size: 20px;
+    background-color: white!important;
+    min-height: 150px;
+    transition: .3s all linear;
+}
+/* contact-section */
+.contact-section {
+    min-height: 600px;
+}
+
+.contact {
+    min-height: 550px;
+}
+
+.contact-h5{
+    box-shadow: rgba(135, 135, 135, 0.062) 1px 3px 2px 4px ;
+}
+
+.contact-1 a {
+    color: rgba(0, 0, 0, 0.773);
+    text-decoration: none;
+}
+.container-fluid{
+
+    overflow: hidden !important;
+}
